@@ -36,8 +36,8 @@ self.addEventListener('fetch', e=>{
                
                return caches.open(CACHE_DYNAMIC).then(r=>{
                    
-                   r.put(e.request, newRes);
-                   return newRes; 
+                   r.put(e.request, newRes.clone());
+                   return newRes.clone(); 
                });
                
            });
