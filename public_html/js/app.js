@@ -2,18 +2,18 @@
 
 let url = window.location.href;
 
-let swLocation= '//sw.js';
+let swLocation= '/practicaPWA5/sw.js';
 
 
 if(navigator.serviceWorker){
     
     if(url.includes('localhost')){
         
-        navigator.serviceWorker.register('./sw.js');
-    }else{
+        swLocation = './sw.js';
+    }
         
         navigator.serviceWorker.register(swLocation);
-    }
+    
     
     
 }
