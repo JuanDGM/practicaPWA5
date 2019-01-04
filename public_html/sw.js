@@ -32,7 +32,7 @@ self.addEventListener('fetch', e=>{
             return res;
         }else{
             
-           return fetch(e.request).then(newRes=>{
+           return fetch(e.request.url).then(newRes=>{
                
                return caches.open(CACHE_DYNAMIC).then(r=>{
                    
