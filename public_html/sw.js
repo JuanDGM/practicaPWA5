@@ -21,11 +21,11 @@ self.addEventListener('install', e=>{
     
 });
 
-
+/*
 self.addEventListener('fetch', e=>{
     
     
-/*    const respuesta = caches.match(e.request).then(res =>{
+    const respuesta = caches.match(e.request).then(res =>{
         
         if(res){
             
@@ -47,9 +47,9 @@ self.addEventListener('fetch', e=>{
         }
         
     });
-  */
+  
     
     e.respondWith(caches.match(e.request));
     
 });
-
+*/
