@@ -2,7 +2,7 @@
 
 let url = window.location.href;
 
-let swLocation= '/practicaPWA5/sw.js';
+let swLocation= '/practicaPWA5/public_html/sw.js';
 
 
 if(navigator.serviceWorker){
